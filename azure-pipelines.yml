@@ -3,24 +3,6 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-name: 'Fortify ScanCentral Scan'
-description: 'Build secure software fast with Fortify SAST scans'
-author: 'Fortify'
-inputs:
-  version:
-    description: 'Fortify ScanCentral Client version to use'
-    required: true
-    default: '23.1.0'
-  client-auth-token:
-    description: 'ScanCentral client authentication token'
-    required: false
-runs:
-  using: 'node16'
-  main: 'dist/index.js'
-branding:
-  icon: 'shield'
-  color: 'blue'
-
 pool:
   name: Azure Pipelines
 steps:
