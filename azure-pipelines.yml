@@ -18,8 +18,8 @@ steps:
   displayName: 'Fortify ScanCentral SAST Assessment'
   inputs:
     scanCentralCtrlUrl: 'https://scsastctrl.uat.fortifyhosted.net/scancentral-ctrl'
-    ScanCentral.ClientToken: 'T8r06jr8sRjjNR8y86eqqIODj9JnKoOgl8lbsmFoVo92juoJ'
-    ScanCentral.SscCiToken: '302d98e1-22b6-4cfb-bc27-f2c9f60f4858'
+    ScanCentral.ClientToken: $(ScanCentral.ClientToken)
+    ScanCentral.SscCiToken: $(ScanCentral.SscCiToken)
     sscUrl: 'https://ssc.uat.fortifyhosted.net/'
     uploadToSSC: true
     applicationName: 'TestLuis_AzureDevOps_Gradle'
