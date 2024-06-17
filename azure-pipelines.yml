@@ -7,9 +7,9 @@ pool:
   name: Azure Pipelines
 steps:
 - task: JavaToolInstaller@0
-  displayName: 'Use Java 17'
+  displayName: 'Use Java 11'
   inputs:
-    versionSpec: 17
+    versionSpec: 11
     jdkArchitectureOption: x64
     jdkSourceOption: PreInstalled
 
@@ -23,7 +23,7 @@ steps:
     sscUrl: 'https://ssc.uat.fortifyhosted.net/'
     uploadToSSC: true
     applicationName: 'TestLuis_AzureDevOps_Gradle'
-    applicationVersion: v02
+    applicationVersion: v01
     buildTool: gradle
     skipBuild: false
     includeTest: false
